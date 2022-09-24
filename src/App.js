@@ -10,11 +10,11 @@ import Showcase from './layout/Showcase';
 import Team from './layout/Team';
 import Faq from './layout/Faq';
 import Footer from './layout/Footer';
+import Banner from './layout/Banner';
 
 import 'primereact/resources/themes/md-light-indigo/theme.css'; //theme
 import 'primereact/resources/primereact.min.css'; //core css
 import 'primeicons/primeicons.css'; //icons
-import Banner from './layout/Banner';
 
 function App() {
   return (

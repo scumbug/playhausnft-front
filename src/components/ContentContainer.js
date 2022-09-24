@@ -17,9 +17,12 @@ const Container = styled.div`
   gap: 100px;
 `;
 
-const ContentContainer = ({ className, children }) => {
+const ContentContainer = ({ className, children, id, title }) => {
   return (
-    <Section className={className}>
+    <Section
+      className={`${className} content-container`}
+      id={id}
+    >
       <Container>{children}</Container>
     </Section>
   );

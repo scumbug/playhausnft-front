@@ -57,6 +57,17 @@ const GlobalStyles = styled.createGlobalStyle`
     color: ${(props) => props.theme.darkblue};
     font-family: 'League Spartan', 'primeicons', sans-serif;
   }
+
+  @media (max-width: 960px) {
+    .content-container > div,
+    #banner {
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: ${(props) => props.theme.fontxl};
+    }
+  }
 `;
 
 export default GlobalStyles;

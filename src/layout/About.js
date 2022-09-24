@@ -18,7 +18,7 @@ const SubText = styled.p`
 
 const About = () => {
   return (
-    <ContentContainer>
+    <ContentContainer id='about'>
       <Box>
         <img
           src={about}

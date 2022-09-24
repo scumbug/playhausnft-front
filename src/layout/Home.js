@@ -3,6 +3,9 @@ import styled from 'styled-components';
 import landing from '../assets/images/landing.png';
 import ContentContainer from '../components/ContentContainer';
 
+const HomeContainer = styled(ContentContainer)`
+  flex-wrap: wrap;
+`;
 const Box = styled.div`
   display: flex;
   flex-direction: column;
@@ -18,7 +21,7 @@ const SubText = styled.span`
 
 const Home = () => {
   return (
-    <ContentContainer>
+    <HomeContainer id='home'>
       <Box>
         <h1>Welcome to the Playhaus</h1>
         <SubText>For pets, pet owners and pet lovers</SubText>
@@ -30,7 +33,7 @@ const Home = () => {
           alt='landing'
         />
       </Box>
-    </ContentContainer>
+    </HomeContainer>
   );
 };
 

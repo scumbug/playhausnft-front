@@ -69,7 +69,7 @@ const DiscordButton = styled.button`
 
 const Banner = () => {
   return (
-    <Section>
+    <Section id='banner'>
       <ImgContainer>
         <img
           src={img1}

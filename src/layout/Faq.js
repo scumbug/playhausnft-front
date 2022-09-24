@@ -33,32 +33,51 @@ const FaqContainer = styled(ContentContainer)`
   }
 `;
 
+const FaqTitle = styled.div`
+  text-align: center;
+
+  h1 {
+    margin: 3rem auto;
+  }
+`;
+
+const FaqContent = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+`;
+
 const Faq = () => {
   return (
-    <FaqContainer>
-      <h1>FAQs</h1>
-      <Accordion multiple>
-        <AccordionTab header='What is Playhaus?'>
-          Playhaus is your lifestyle brand. We are starting with pets and pet owners, but everyone
-          is welcomed, especially if you like dogs and cats.
-        </AccordionTab>
-        <AccordionTab header='How do I join?'>
-          Visit us on Twitter for the latest updates. Discord will be open shortly.
-        </AccordionTab>
-        <AccordionTab header='IP rights for Playhaus holders?'>
-          We do not even have an NFT collection (yet).
-        </AccordionTab>
-        <AccordionTab header='How do I get on the guestlist?'>
-          Chill with us on Twitter / Discord (Coming Soon), share good vibes and lots of photos of
-          your dogs and cats!
-        </AccordionTab>
-        <AccordionTab header='When is the mint?'>
-          We do not even have an NFT collection (yet).
-        </AccordionTab>
-        <AccordionTab header='How much is the mint?'>
-          Obviously free. Are there still paid mints these days? Oh, you'll need some gas duh.
-        </AccordionTab>
-      </Accordion>
+    <FaqContainer id='faq'>
+      <FaqTitle>
+        <h1>FAQs</h1>
+      </FaqTitle>
+      <FaqContent>
+        <Accordion multiple>
+          <AccordionTab header='What is Playhaus?'>
+            Playhaus is your lifestyle brand. We are starting with pets and pet owners, but everyone
+            is welcomed, especially if you like dogs and cats.
+          </AccordionTab>
+          <AccordionTab header='How do I join?'>
+            Visit us on Twitter for the latest updates. Discord will be open shortly.
+          </AccordionTab>
+          <AccordionTab header='IP rights for Playhaus holders?'>
+            We do not even have an NFT collection (yet).
+          </AccordionTab>
+          <AccordionTab header='How do I get on the guestlist?'>
+            Chill with us on Twitter / Discord (Coming Soon), share good vibes and lots of photos of
+            your dogs and cats!
+          </AccordionTab>
+          <AccordionTab header='When is the mint?'>
+            We do not even have an NFT collection (yet).
+          </AccordionTab>
+          <AccordionTab header='How much is the mint?'>
+            Obviously free. Are there still paid mints these days? Oh, you'll need some gas duh.
+          </AccordionTab>
+        </Accordion>
+      </FaqContent>
     </FaqContainer>
   );
 };

@@ -4,6 +4,7 @@ import { Card } from 'primereact/card';
 
 const Image = styled.img`
   color: ${(props) => props.theme.light};
+  min-width: 20rem;
   //border: 10px solid #fff;
   //border-radius: 20px 20px 0 0;
 `;

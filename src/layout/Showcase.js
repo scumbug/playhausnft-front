@@ -13,7 +13,6 @@ const ShowcaseContainer = styled(ContentContainer)`
   div:first-child {
     flex-direction: column;
   }
-  padding-bottom: 10vh;
 `;
 
 const move = keyframes`
@@ -50,7 +49,7 @@ const Showcase = () => {
   const listRef = useRef(null);
 
   return (
-    <ShowcaseContainer>
+    <ShowcaseContainer id='story'>
       <ShowcaseTitle>
         <h1>The Story Of Our Pets' Lives</h1>
         <p>
