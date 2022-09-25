@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/playhausnft-front/static/css/main.f222fa32.css",
-    "main.js": "/playhausnft-front/static/js/main.c21bcf71.js",
+    "main.js": "/playhausnft-front/static/js/main.a420e011.js",
     "static/js/787.a609ccfc.chunk.js": "/playhausnft-front/static/js/787.a609ccfc.chunk.js",
     "static/media/about.png": "/playhausnft-front/static/media/about.01f3b609c918def15fa7.png",
     "static/media/pudding.png": "/playhausnft-front/static/media/pudding.d191d75386f05ab1d567.png",
@@ -36,11 +36,11 @@
     "static/media/league-spartan-vietnamese-400-normal.woff2": "/playhausnft-front/static/media/league-spartan-vietnamese-400-normal.e8ad14433ca56ca2d3c0.woff2",
     "index.html": "/playhausnft-front/index.html",
     "main.f222fa32.css.map": "/playhausnft-front/static/css/main.f222fa32.css.map",
-    "main.c21bcf71.js.map": "/playhausnft-front/static/js/main.c21bcf71.js.map",
+    "main.a420e011.js.map": "/playhausnft-front/static/js/main.a420e011.js.map",
     "787.a609ccfc.chunk.js.map": "/playhausnft-front/static/js/787.a609ccfc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f222fa32.css",
-    "static/js/main.c21bcf71.js"
+    "static/js/main.a420e011.js"
   ]
 }
