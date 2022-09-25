@@ -7,9 +7,7 @@ const TeamContainer = styled.div`
 `;
 
 const TeamImage = styled.img`
-  width: 200px;
-  color: ${(props) => props.theme.light};
-  //border: 2px solid ${(props) => props.theme.text};
+  width: 10em;
   border-radius: 20px;
 `;
 

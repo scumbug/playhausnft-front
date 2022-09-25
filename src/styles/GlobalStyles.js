@@ -62,13 +62,27 @@ const GlobalStyles = styled.createGlobalStyle`
   }
 
   @media (max-width: 960px) {
-    .content-container > div,
+    .content-container > div {
+      flex-direction: column;
+    }
+
     #banner {
       flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    #home > div > div,
+    #about > div > div {
+      text-align: center;
     }
 
     h1 {
       font-size: ${(props) => props.theme.fontxl};
+    }
+
+    button {
+      font-size: ${(props) => props.theme.fontlg} !important;
     }
   }
 `;

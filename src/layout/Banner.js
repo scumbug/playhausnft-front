@@ -9,12 +9,11 @@ import img5 from '../assets/images/banner/5.png';
 
 const Section = styled.section`
   width: 100vw;
-  height: 22rem;
+  height: 20rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  //background: ${(props) => props.theme.darkerblue};
-  background: #202020;
+  background: ${(props) => props.theme.grey};
   position: relative;
 `;
 
@@ -30,6 +29,7 @@ const ImgContainer = styled.div`
 
 const JoinText = styled.h1`
   color: ${(props) => props.theme.body};
+  font-size: ${(props) => props.theme.fontxxl};
   z-index: 10;
 `;
 

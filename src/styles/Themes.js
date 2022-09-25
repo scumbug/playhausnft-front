@@ -2,6 +2,7 @@ export const light = {
   bronze: '#DEB992',
   darkblue: '#0f3d5f',
   darkerblue: '#092a42',
+  grey: '#202020',
   light: '#e0edf4',
   body: '#fbf4f3',
   text: '#0f3d5f',

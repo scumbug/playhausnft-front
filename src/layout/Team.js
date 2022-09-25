@@ -20,18 +20,12 @@ const TeamContainer = styled(ContentContainer)`
   }
 `;
 
-const TeamTitle = styled.div`
-  text-align: center;
-
-  h1 {
-    margin: 3rem auto;
-  }
-`;
+const TeamTitle = styled.div``;
 
 const TeamMemberList = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 5em;
   justify-content: center;
 `;
 

@@ -24,8 +24,7 @@ const ShowcaseTitle = styled.div`
   text-align: center;
 
   h1 {
-    margin: 3rem auto;
-    color: #deb992;
+    color: ${(props) => props.theme.bronze};
   }
 
   p {
@@ -33,14 +32,15 @@ const ShowcaseTitle = styled.div`
     width: 70%;
     margin: auto;
     line-height: 2;
-    color: #deb992;
+    color: ${(props) => props.theme.bronze};
+    margin-top: 16px;
   }
 `;
 
 const ShowcaseList = styled.div`
   display: flex;
   width: 100vw;
-  gap: 20px;
+  gap: 2em;
 
   animation: ${move} 30s linear infinite;
 `;

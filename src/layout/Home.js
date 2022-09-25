@@ -9,14 +9,13 @@ const HomeContainer = styled(ContentContainer)`
 const Box = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 `;
 
 const SubText = styled.span`
-  font-size: ${(props) => props.theme.fontmd};
   color: ${(props) => props.theme.darkblue};
   font-style: italic;
-  margin-top: 16px;
+  margin-top: 1em;
 `;
 
 const Home = () => {

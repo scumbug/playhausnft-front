@@ -6,13 +6,12 @@ import about from '../assets/images/about.png';
 const Box = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 `;
 
 const SubText = styled.p`
-  font-size: ${(props) => props.theme.fontmd};
   color: ${(props) => props.theme.darkblue};
-  margin-top: 16px;
+  margin-top: 1em;
   line-height: 2;
 `;
 

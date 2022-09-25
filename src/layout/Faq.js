@@ -27,19 +27,13 @@ const FaqContainer = styled(ContentContainer)`
 
     .p-accordion-content {
       color: ${(props) => props.theme.darkblue};
-      line-height: 2em;
+      line-height: 2;
       padding-top: 1px;
     }
   }
 `;
 
-const FaqTitle = styled.div`
-  text-align: center;
-
-  h1 {
-    margin: 3rem auto;
-  }
-`;
+const FaqTitle = styled.div``;
 
 const FaqContent = styled.div`
   display: flex;
