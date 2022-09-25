@@ -12,9 +12,12 @@ const GlobalStyles = styled.createGlobalStyle`
     box-sizing: unset;
   }
 
+  #root {
+    overflow-x: hidden;
+  }
+
   body {
     font-family: 'League Spartan', sans-serif;
-    overflow-x: hidden;
     background-color: ${(props) => props.theme.body};
   }
 
