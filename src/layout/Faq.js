@@ -6,6 +6,8 @@ import { Accordion, AccordionTab } from 'primereact/accordion';
 const FaqContainer = styled(ContentContainer)`
   div:first-child {
     flex-wrap: wrap;
+    flex-direction: column;
+
     h1 {
       text-align: center;
       flex-basis: 100vw;
@@ -46,7 +48,7 @@ const Faq = () => {
   return (
     <FaqContainer id='faq'>
       <FaqTitle>
-        <h1>FAQs</h1>
+        <h1>FAQ</h1>
       </FaqTitle>
       <FaqContent>
         <Accordion multiple>

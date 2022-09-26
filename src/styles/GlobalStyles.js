@@ -9,7 +9,6 @@ const GlobalStyles = styled.createGlobalStyle`
   *::after {
     margin: 0;
     padding: 0;
-    box-sizing: unset;
   }
 
   #root {
@@ -54,6 +53,33 @@ const GlobalStyles = styled.createGlobalStyle`
     position: fixed;
     top: 0;
     z-index: 999;
+
+    .p-menubar {
+      width: 90vw;
+      border: none;
+    }
+
+    .p-menubar-button {
+      margin: auto;
+    }
+
+    .p-menubar-root-list {
+      margin: auto;
+    }
+
+    .p-menubar-end {
+      margin: 0;
+    }
+
+    .p-menubar .p-menuitem-link {
+      justify-content: center;
+    }
+
+    .p-menubar-mobile-active .p-menubar-root-list {
+      left: 0;
+      right: 0;
+      width: 50%;
+    }
   }
 
   [class*='p-'] {
@@ -62,6 +88,9 @@ const GlobalStyles = styled.createGlobalStyle`
   }
 
   @media (max-width: 960px) {
+    #menu {
+      display: none;
+    }
     .content-container > div {
       flex-direction: column;
     }

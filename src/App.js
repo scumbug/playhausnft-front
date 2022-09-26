@@ -12,6 +12,8 @@ import Faq from './layout/Faq';
 import Footer from './layout/Footer';
 import Banner from './layout/Banner';
 
+import GoTop from './components/GoTop';
+
 import 'primereact/resources/themes/md-light-indigo/theme.css'; //theme
 import 'primereact/resources/primereact.min.css'; //core css
 import 'primeicons/primeicons.css'; //icons
@@ -30,6 +32,7 @@ function App() {
       <Faq />
       <Banner />
       <Footer />
+      <GoTop />
     </ThemeProvider>
   );
 }

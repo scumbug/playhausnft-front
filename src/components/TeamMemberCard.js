@@ -13,11 +13,12 @@ const TeamImage = styled.img`
 
 const Name = styled.h2`
   text-align: center;
-  margin-top: 20px;
+  margin-top: 1.5em;
 `;
 
 const Position = styled.span`
   text-align: center;
+  margin-top: 1em;
 `;
 
 const TeamMemberCard = (props) => {

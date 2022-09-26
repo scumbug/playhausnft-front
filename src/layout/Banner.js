@@ -38,8 +38,8 @@ const DiscordButton = styled.button`
   color: ${(props) => props.theme.darkblue};
   outline: none;
   border: none;
-  font-weight: 600;
   font-size: ${(props) => props.theme.fontlg};
+  letter-spacing: 1px;
   padding: 1.5rem 3rem;
   border-radius: 50px;
   z-index: 10;
@@ -96,7 +96,7 @@ const Banner = () => {
         Join the <br />
         Playhaus
       </JoinText>
-      <DiscordButton>Discord Coming Soon</DiscordButton>
+      <DiscordButton>Discord coming soon</DiscordButton>
     </Section>
   );
 };

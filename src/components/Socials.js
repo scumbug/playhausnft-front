@@ -4,7 +4,7 @@ import discord from '../assets/icons/discord.png';
 import styled from 'styled-components';
 
 const Image = styled.img`
-  height: 30%;
+  height: 3rem;
 `;
 
 const SocialBox = styled.div`
