@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/playhausnft-front/static/css/main.f222fa32.css",
-    "main.js": "/playhausnft-front/static/js/main.94874245.js",
+    "main.css": "/playhausnft-front/static/css/main.8ee0d698.css",
+    "main.js": "/playhausnft-front/static/js/main.d04666ca.js",
     "static/js/787.a609ccfc.chunk.js": "/playhausnft-front/static/js/787.a609ccfc.chunk.js",
     "static/media/about.png": "/playhausnft-front/static/media/about.01f3b609c918def15fa7.png",
     "static/media/pudding.png": "/playhausnft-front/static/media/pudding.d191d75386f05ab1d567.png",
@@ -13,12 +13,15 @@
     "static/media/luna.jpg": "/playhausnft-front/static/media/luna.2e5863e1475c2df5db63.jpg",
     "static/media/cat3.jpg": "/playhausnft-front/static/media/cat3.8d359e21ae0492b49598.jpg",
     "static/media/4.png": "/playhausnft-front/static/media/4.8c90d4208f2fe1ac6863.png",
+    "static/media/Dog3.jpg": "/playhausnft-front/static/media/Dog3.b942cef50f6bdb46195e.jpg",
     "static/media/xaos.png": "/playhausnft-front/static/media/xaos.cfe75aacefbdefa52d2b.png",
+    "static/media/Cat4.jpg": "/playhausnft-front/static/media/Cat4.138419a9b207bdccd5df.jpg",
     "static/media/3.png": "/playhausnft-front/static/media/3.937c357fc77c9bf5e65e.png",
     "static/media/dog1.jpg": "/playhausnft-front/static/media/dog1.223bc7404c9ee422b621.jpg",
     "static/media/juzvibes.png": "/playhausnft-front/static/media/juzvibes.42b8870c1fe951cfc6ca.png",
     "static/media/2.png": "/playhausnft-front/static/media/2.712f692e26cb71d6e6f8.png",
     "static/media/1.png": "/playhausnft-front/static/media/1.8012e12c742b162c6768.png",
+    "static/media/Cat5.jpg": "/playhausnft-front/static/media/Cat5.cc16b419d3450ccd6f03.jpg",
     "static/media/primeicons.eot": "/playhausnft-front/static/media/primeicons.7fc4d8e224d1ff1b9c62.eot",
     "static/media/primeicons.woff": "/playhausnft-front/static/media/primeicons.449aa8c65cdc5c2a8686.woff",
     "static/media/primeicons.ttf": "/playhausnft-front/static/media/primeicons.91bacab1f083f2795272.ttf",
@@ -35,12 +38,12 @@
     "static/media/league-spartan-latin-ext-400-normal.woff2": "/playhausnft-front/static/media/league-spartan-latin-ext-400-normal.8915f44a464c0038a068.woff2",
     "static/media/league-spartan-vietnamese-400-normal.woff2": "/playhausnft-front/static/media/league-spartan-vietnamese-400-normal.e8ad14433ca56ca2d3c0.woff2",
     "index.html": "/playhausnft-front/index.html",
-    "main.f222fa32.css.map": "/playhausnft-front/static/css/main.f222fa32.css.map",
-    "main.94874245.js.map": "/playhausnft-front/static/js/main.94874245.js.map",
+    "main.8ee0d698.css.map": "/playhausnft-front/static/css/main.8ee0d698.css.map",
+    "main.d04666ca.js.map": "/playhausnft-front/static/js/main.d04666ca.js.map",
     "787.a609ccfc.chunk.js.map": "/playhausnft-front/static/js/787.a609ccfc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f222fa32.css",
-    "static/js/main.94874245.js"
+    "static/css/main.8ee0d698.css",
+    "static/js/main.d04666ca.js"
   ]
 }
