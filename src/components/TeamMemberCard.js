@@ -19,6 +19,7 @@ const Name = styled.h2`
 const Position = styled.span`
   text-align: center;
   margin-top: 1em;
+  color: ${(props) => props.theme.darkblue};
 `;
 
 const TeamMemberCard = (props) => {

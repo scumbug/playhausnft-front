@@ -9,6 +9,7 @@ const GlobalStyles = styled.createGlobalStyle`
   *::after {
     margin: 0;
     padding: 0;
+    font-size: 16px;
   }
 
   #root {
@@ -42,6 +43,11 @@ const GlobalStyles = styled.createGlobalStyle`
     line-height: 1.1em;
   }
 
+  h2 {
+    color: ${(props) => props.theme.darkblue};
+    line-height: 1.1em;
+  }
+
   .navbar-section {
     width: 100vw;
     display: flex;
@@ -53,26 +59,24 @@ const GlobalStyles = styled.createGlobalStyle`
     position: fixed;
     top: 0;
     z-index: 999;
+    box-shadow: 0 0 20px #35303126;
 
     .p-menubar {
       width: 90vw;
       border: none;
+
+      .p-menuitem-link {
+        justify-content: center;
+      }
     }
 
-    .p-menubar-button {
-      margin: auto;
-    }
-
+    .p-menubar-button,
     .p-menubar-root-list {
       margin: auto;
     }
 
     .p-menubar-end {
       margin: 0;
-    }
-
-    .p-menubar .p-menuitem-link {
-      justify-content: center;
     }
 
     .p-menubar-mobile-active .p-menubar-root-list {
@@ -108,10 +112,6 @@ const GlobalStyles = styled.createGlobalStyle`
 
     h1 {
       font-size: ${(props) => props.theme.fontxl};
-    }
-
-    button {
-      font-size: ${(props) => props.theme.fontlg} !important;
     }
   }
 `;

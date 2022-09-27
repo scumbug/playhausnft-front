@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import ContentContainer from '../components/ContentContainer';
 import about from '../assets/images/about.png';
 
+const AboutContainer = styled(ContentContainer)`
+  background: ${(props) => props.theme.light};
+`;
+
 const Box = styled.div`
   display: flex;
   flex-direction: column;
@@ -17,7 +21,7 @@ const SubText = styled.p`
 
 const About = () => {
   return (
-    <ContentContainer id='about'>
+    <AboutContainer id='about'>
       <Box>
         <img
           src={about}
@@ -38,7 +42,7 @@ const About = () => {
           love for your pets.
         </SubText>
       </Box>
-    </ContentContainer>
+    </AboutContainer>
   );
 };
 

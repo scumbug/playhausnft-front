@@ -35,11 +35,8 @@ const JoinText = styled.h1`
 
 const DiscordButton = styled.button`
   background-color: ${(props) => props.theme.body};
-  color: ${(props) => props.theme.darkblue};
   outline: none;
   border: none;
-  font-size: ${(props) => props.theme.fontlg};
-  letter-spacing: 1px;
   padding: 1.5rem 3rem;
   border-radius: 50px;
   z-index: 10;
@@ -96,7 +93,9 @@ const Banner = () => {
         Join the <br />
         Playhaus
       </JoinText>
-      <DiscordButton>Discord coming soon</DiscordButton>
+      <DiscordButton>
+        <h2>Discord coming soon</h2>
+      </DiscordButton>
     </Section>
   );
 };

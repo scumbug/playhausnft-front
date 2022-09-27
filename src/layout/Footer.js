@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Socials from '../components/Socials';
 import { Divider } from 'primereact/divider';
 
 const FooterContainer = styled.section`
@@ -44,22 +43,13 @@ const MenuItems = styled.li`
   }
 `;
 
-const scrollTo = (id) => {
-  const element = document.getElementById(id);
-
-  element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-};
-
 const Footer = () => {
   return (
     <FooterContainer>
       <Top>
         <Menu>
-          <MenuItems onClick={() => scrollTo('home')}>Home</MenuItems>
-          <MenuItems onClick={() => scrollTo('about')}>About</MenuItems>
-          <MenuItems onClick={() => scrollTo('story')}>Story</MenuItems>
-          <MenuItems onClick={() => scrollTo('team')}>Team</MenuItems>
-          <MenuItems onClick={() => scrollTo('faq')}>FAQ</MenuItems>
+          <MenuItems>Privacy Policy</MenuItems>
+          <MenuItems>Terms &amp; Conditions</MenuItems>
         </Menu>
       </Top>
       <Divider align='center' />

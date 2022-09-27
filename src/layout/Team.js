@@ -9,6 +9,7 @@ import juzvibes from '../assets/images/teams/juzvibes.png';
 import tkyomilk from '../assets/images/teams/tkyomilk.png';
 
 const TeamContainer = styled(ContentContainer)`
+  background: ${(props) => props.theme.light};
   div:first-child {
     flex-wrap: wrap;
     flex-direction: column;

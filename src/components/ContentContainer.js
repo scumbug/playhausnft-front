@@ -24,7 +24,7 @@ const ContentContainer = ({ className, children, id, title }) => {
       className={`${className} content-container`}
       id={id}
     >
-      <Container>{children}</Container>
+      <Container className='content'>{children}</Container>
     </Section>
   );
 };
