@@ -4,6 +4,7 @@ import { Autoplay } from 'swiper';
 import styled from 'styled-components';
 
 import './CustomSwiper.scss';
+import { useInView } from 'react-intersection-observer';
 
 const ExpandingSwiper = styled.div`
   .swiper {
@@ -55,11 +56,15 @@ const initEvents = (swiper) => {
     const containerEl = slideEl.querySelector('.expanding-collection-container');
     const coverEl = slideEl.querySelector('.expanding-collection-cover');
     const contentEl = slideEl.querySelector('.expanding-collection-content');
+
     coverEl.expandingCollectionClickHandler = () => {
       if (!contentEl || !slideEl.classList.contains('swiper-slide-active')) return;
       containerEl.classList.toggle('expanding-collection-opened');
     };
     coverEl.addEventListener('click', coverEl.expandingCollectionClickHandler);
+
+    if (slideEl.classList.contains('swiper-slide-active'))
+      containerEl.classList.toggle('expanding-collection-opened');
   });
 };
 const removeEvents = (swiper) => {
@@ -72,11 +77,19 @@ const removeEvents = (swiper) => {
 };
 
 const CustomSwiper = ({ children }) => {
+  const [isVisible, inView] = useInView({
+    triggerOnce: true,
+  });
+  const swiper = useRef(null);
   const expandingCollection = useRef(null);
+
+  if (inView) swiper.current.swiper.autoplay.start();
 
   return (
     <ExpandingSwiper ref={expandingCollection}>
+      <div ref={isVisible}></div>
       <Swiper
+        ref={swiper}
         speed={600}
         resistanceRatio={0}
         slidesPerView={'auto'}
@@ -92,6 +105,7 @@ const CustomSwiper = ({ children }) => {
             expandingCollection.current.classList.add('expanding-collection-initialized');
           });
           initEvents(s);
+          s.autoplay.stop();
         }}
         onSlideChange={(s) => {
           const openedContainerEl = s.wrapperEl.querySelector('.expanding-collection-opened');
@@ -116,7 +130,12 @@ const CustomSwiper = ({ children }) => {
         onBeforeDestroy={(s) => removeEvents(s)}
       >
         {children.map((child, index) => (
-          <SwiperSlide key={index}>{child}</SwiperSlide>
+          <SwiperSlide
+            data-pr-tooltip='Click on the cute photos to find out more!'
+            key={index}
+          >
+            {child}
+          </SwiperSlide>
         ))}
       </Swiper>
     </ExpandingSwiper>

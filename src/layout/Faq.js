@@ -53,24 +53,22 @@ const Faq = () => {
       <FaqContent>
         <Accordion multiple>
           <AccordionTab header='What is Playhaus?'>
-            Playhaus is your lifestyle brand. We are starting with pets and pet owners, but everyone
-            is welcomed, especially if you like dogs and cats.
+            Playhaus is a lifestyle brand for pets, pet owners, and everybody who loves animals -{' '}
+            <span style={{ fontStyle: 'italic' }}>so basically everyone!</span>
           </AccordionTab>
           <AccordionTab header='How do I join?'>
             Visit us on Twitter for the latest updates. Discord will be open shortly.
           </AccordionTab>
-          <AccordionTab header='IP rights for Playhaus holders?'>
-            We do not even have an NFT collection (yet).
-          </AccordionTab>
+          <AccordionTab header='IP rights for Playhaus holders?'>- to be updated -</AccordionTab>
           <AccordionTab header='How do I get on the guestlist?'>
-            Chill with us on Twitter / Discord (Coming Soon), share good vibes and lots of photos of
+            Chill with us on Twitter / Discord (coming soon), share good vibes and lots of photos of
             your dogs and cats!
           </AccordionTab>
           <AccordionTab header='When is the mint?'>
-            We do not even have an NFT collection (yet).
+            Again, hang out with us on Twitter and Discord (coming soon) for the latest updates!
           </AccordionTab>
           <AccordionTab header='How much is the mint?'>
-            Obviously free. Are there still paid mints these days? Oh, you'll need some gas duh.
+            Absolutely FREE! But then again are there still paid mints these days?
           </AccordionTab>
         </Accordion>
       </FaqContent>

@@ -43,7 +43,7 @@ const Team = () => {
           img={xaos}
         />
         <TeamMemberCard
-          name='Pudding'
+          name='Püdding'
           position='Co-Founder'
           img={pudding}
         />

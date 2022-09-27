@@ -14,6 +14,7 @@ import img9 from '../assets/images/showcase/cat3.jpg';
 
 import CustomSwiper from '../components/CustomSwiper/CustomSwiper';
 import CustomSwiperSlide from '../components/CustomSwiper/CustomSwiperSlide';
+import { Tooltip } from 'primereact/tooltip';
 
 const ShowcaseContainer = styled(ContentContainer)`
   background: ${(props) => props.theme.darkerblue};
@@ -44,17 +45,25 @@ const ShowcaseList = styled.div`
   width: 100vw;
 `;
 
+const hideToolTip = () => {
+  document.querySelectorAll('.p-tooltip-active').forEach((el) => (el.style.display = 'none'));
+};
+
 const Showcase = () => {
   return (
     <ShowcaseContainer id='story'>
       <ShowcaseTitle>
         <h1>The Story of Our Pets' Lives</h1>
         <p>
-          Every dog, every cat has a story. Join us as we explore the relationships with our furry
-          companions and immortalise their special place in our hearts with Playhaus.
+          Every dog, every cat has a story. Join us as we explore our relationships with our furry
+          companions and immortalise them in the Playhaus.
         </p>
       </ShowcaseTitle>
       <ShowcaseList>
+        {/* <Tooltip
+          target='.swiper-slide-active'
+          position='top'
+        /> */}
         <CustomSwiper>
           <CustomSwiperSlide
             image={img1}
